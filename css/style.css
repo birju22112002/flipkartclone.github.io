@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+:root {
+    --main-bg-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--main-bg-color);
+    font-family: 'Lato', sans-serif;
+    justify-content: space-between;
+    /* position: sticky; */
+    top: 0;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 144px;
+    /* padding: 0 25px; */
+}
+
+nav ul {
+    height: 58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+s nav ul li a:hover {
+    font-weight: bolder;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 790px;
+    background: rgba(255, 255, 255, 0.93);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 0px 60px;
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background: transparent;
+}
+
+.search-bar input {
+    background: transparent;
+    width: 40vw;
+    height: 27px;
+    flex: 1;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    margin: 0 16px 0 100px;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    /* font-family: 'Lato', sans-serif;
+    font-weight: 900; */
+    width: 25px;
+}
+
+
+.slider {
+    width: 80vw;
+    margin: 12px auto;
+    overflow: hidden;
+}
+
+.card {
+    max-width: 91vw;
+    margin: 37px auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.cards {
+    display: flex;
+    overflow: scroll;
+}
+
+.card-item {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+
+.card h2 {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+footer {
+    height: 12vh;
+    background-color: var(--main-bg-color);
+    color: black;
+    font-family: 'Lato', sans-serif;
+
+}
